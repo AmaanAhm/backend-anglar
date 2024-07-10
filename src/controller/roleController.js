@@ -1,7 +1,6 @@
 const Role = require('../models/roleModel'); // Adjust path as necessary
 
 const getRoles = async (req, res) => {
-  console.log(res, "response");
   try {
     const roles = await Role.find({});
     res.status(200).json({ roles });
